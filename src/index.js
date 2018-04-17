@@ -7,21 +7,12 @@ import store, { history } from "./store/configureStore";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { ThemeProvider } from "react-jss";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
-import cyverseTheme from "./cyverse-ui/styles/cyverseTheme";
-
+import { cyverseTheme } from "cyverse-ui/es/styles";
 import "./index.css";
 import App from "./App";
-import CreateInstanceWizard from "./components/wizards/CreateInstanceWizard";
-import CreateVolumeDialog from "./containers/CreateVolumeDialog";
-import CreateProjectDialog from "./containers/CreateProjectDialog";
-import CreateLinkDialog from "./containers/CreateLinkDialog";
 import registerServiceWorker from "./registerServiceWorker";
 import injectTapEventPlugin from "react-tap-event-plugin";
-import AddImageToProjectDialog from "./containers/AddImageToProjectDialog";
-import MoveToProjectDialog from "./containers/MoveToProjectDialog";
-import AttachToInstanceDialog from "./containers/AttachToInstanceDialog";
-import DetachFromInstanceDialog from "./containers/DetachFromInstanceDialog";
-import AttachFromInstanceDiolog from "./containers/AttachFromInstanceDialog";
+
 injectTapEventPlugin();
 
 const appTheme = getMuiTheme(cyverseTheme);
@@ -32,15 +23,6 @@ ReactDOM.render(
         <ThemeProvider theme={appTheme}>
           <div>
             <App />
-            <CreateInstanceWizard />
-            <CreateVolumeDialog />
-            <CreateProjectDialog />
-            <CreateLinkDialog />
-            <AddImageToProjectDialog />
-            <MoveToProjectDialog />
-            <AttachToInstanceDialog />
-            <AttachFromInstanceDiolog />
-            <DetachFromInstanceDialog />
           </div>
         </ThemeProvider>
       </MuiThemeProvider>

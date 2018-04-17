@@ -1,5 +1,5 @@
 export const zIndex = {
-    AppBar: 800,
+    AppBar: 810,
     SideBar: 800,
     viewHeader: 800,
     AssetListHeader: 700,

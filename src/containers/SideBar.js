@@ -5,14 +5,8 @@ import { connect } from "react-redux";
 import injectSheet, {withTheme} from "react-jss";
 import classnames from "classnames";
 import { zIndex } from "../styles/styles";
-import DashboardIcon from "material-ui/svg-icons/action/dashboard";
-import ListIcon from "material-ui/svg-icons/action/list";
-import NotificationsIcon from "material-ui/svg-icons/social/notifications";
-import ProjectsIcon from "material-ui/svg-icons/file/folder";
-import ImageIcon from "material-ui/svg-icons/content/save";
+import HomeIcon from "material-ui/svg-icons/action/home";
 import { ListItem } from "material-ui";
-import VolumeIcon from "../icons/VolumeIcon";
-import InstanceIcon from "../icons/InstanceIcon";
 import SelectableList from "../components/SelectableList";
 
 const style = {
@@ -42,13 +36,7 @@ const style = {
 
 const SideBar = ({
   classes,
-  dashboard,
-  imageCatalog,
-  instances,
-  allAssets,
-  volumes,
-  projects,
-  notifications,
+  goHome,
   current,
   isOpen,
 }) => {
@@ -58,52 +46,14 @@ const SideBar = ({
   )
   return (
     <nav className={wrapperClasses}>
-      <SelectableList value={current || "dashboard"}>
+      <SelectableList value={current || "home"}>
         <ListItem
-          value={"dashboard"}
-          onClick={dashboard}
-          primaryText="Dashboard"
-          leftIcon={<DashboardIcon />}
+          value={"home"}
+          onClick={goHome}
+          primaryText="Home"
+          leftIcon={<HomeIcon />}
         />
-        <ListItem
-          value={"image-catalog"}
-          onClick={imageCatalog}
-          primaryText="Image Catalog"
-          leftIcon={<ImageIcon />}
-        />
-        <ListItem
-          value={"all-assets"}
-          primaryText="All Assets"
-          onClick={allAssets}
-          leftIcon={<ListIcon />}
-        />
-        <ListItem
-          value={"instances"}
-          style={{ paddingLeft: "30px" }}
-          onClick={instances}
-          primaryText="Instances"
-          leftIcon={<InstanceIcon />}
-        />
-        <ListItem
-          value={"volumes"}
-          style={{ paddingLeft: "30px" }}
-          onClick={volumes}
-          primaryText="Volumes"
-          leftIcon={<VolumeIcon />}
-        />
-        <ListItem
-          value={"projects"}
-          style={{ paddingLeft: "30px" }}
-          onClick={projects}
-          primaryText="Projects"
-          leftIcon={<ProjectsIcon />}
-        />
-        <ListItem
-          value={"notifications"}
-          onClick={notifications}
-          primaryText="Notifications"
-          leftIcon={<NotificationsIcon />}
-        />
+       
       </SelectableList>
     </nav>
   );
@@ -112,13 +62,7 @@ const SideBar = ({
 const mapDispatchToProps = dispatch =>
   bindActionCreators(
     {
-      dashboard: () => push(`${process.env.PUBLIC_URL}/`),
-      imageCatalog: () => push(`${process.env.PUBLIC_URL}/image-catalog`),
-      instances: () => push(`${process.env.PUBLIC_URL}/instances`),
-      volumes: () => push(`${process.env.PUBLIC_URL}/volumes`),
-      projects: () => push(`${process.env.PUBLIC_URL}/projects`),
-      allAssets: () => push(`${process.env.PUBLIC_URL}/all-assets`),
-      notifications: () => push(`${process.env.PUBLIC_URL}/notifications`)
+      goHome: () => push(`${process.env.PUBLIC_URL}/`),
     },
     dispatch
   );

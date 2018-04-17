@@ -1,5 +1,5 @@
 const initState = {
-    sidebarOpen: true
+    sidebarOpen: false
 }
 
 export default function appState( state = initState, action) {

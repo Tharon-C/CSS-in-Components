@@ -22,7 +22,7 @@ Removing side effects and taming the beast
 
 ### Does this look familiar?
 ```css
-.homepage .footer #linkList {
-    width: 50% !important
+.homepage .footer #linkList a.listitem {
+  width: 50% !important
 }
 ```

@@ -6,9 +6,10 @@ Removing side effects and taming the beast
 ## Whats wrong with CSS?
 
 ---
+
 ### While trying to fix a “small” layout issue have you ever...
 
-
+---
 @ul
 
 - Spent over an hour trying to figure what was causing the issue?
@@ -123,8 +124,9 @@ A single selector can effect the whole application and the only thing stoping it
 
 ---
 
+### This is a common folder structure in an application following these methodologies
+You can see that there is an implied relationship here defining the parts that make our component.
 ```
-
 html/
 - shopping-cart-template.html
 - callouts-template.html
@@ -139,13 +141,13 @@ css/
 - shopping-cart-template.css
 - callouts-template.css
 - products-template.css
-
 ```
 
 ---
 
+### Many like ECSS takes this to the next logical step
+This makes code deletion less scary and further represents these files as a component.
 ```
-
 shopping-cart-template/
 - shopping-cart.html
 - shopping-cart.css
@@ -170,7 +172,7 @@ products-template/
 ---
 
 ### Implicit coupling
-Parallel maintenance and a superficial relationship that requires disapline
+This is just a superficial relationship that requires disipline and parallel maintanance. Still have global variabls so scoping only happens through naming conventions.  
 ---
 
 ### Side Effects
@@ -178,7 +180,7 @@ Parallel maintenance and a superficial relationship that requires disapline
 ---
 
 ### Already joind concerns between markup and styles
-This is good, the separation is between data, state, and presentation.
+This is good, a better separation in a modern application is between data, state, and presentation.
 
 ---
 

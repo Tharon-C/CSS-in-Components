@@ -249,7 +249,6 @@ Do we go into JSS or wrap it up here?
 ---
 
 ### Thank You!
-github.com/tharon-c
-Twitter: @TharonCarlson
+
 ---
 

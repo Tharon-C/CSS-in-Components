@@ -3,7 +3,7 @@ Removing side effects and taming the beast
 
 ---
 
-# Why are we here?
+## Whats wrong with CSS?
 
 ---
 ### While trying to fix a “small” layout issue have you ever..
@@ -13,6 +13,8 @@ Removing side effects and taming the beast
 
 - Spent over an hour trying to figure what was causing the issue?
 - Fix it to find out you broke something else?
-- Link [within](https://gitpitch.com) list item?
+- Know what is wrong and how to fix it but it requires refactoring a buch of code that seems unrelated?
+- Do something dirty like write an inline style, extra class name or add !important to the rule?
 
 @ulend
+

@@ -70,7 +70,7 @@ __image here__
 
 ---
 
-### As in War
+### Such as in War
 We all lose
 
 ---

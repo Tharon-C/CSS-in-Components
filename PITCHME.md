@@ -70,6 +70,11 @@ __image here__
 
 ---
 
+### As in War
+We all lose
+
+---
+
 > Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
@@ -102,6 +107,12 @@ Specificity Calculator: https://specificity.keegan.st/
 
 ### Side Effects
 A single selector can effect the whole application and the only thing stoping it is disipline
+
+```css
+* {
+    display: none;
+}
+```
 
 ---
 

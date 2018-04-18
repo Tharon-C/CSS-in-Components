@@ -10,9 +10,9 @@ Removing side effects and taming the beast
 ### While trying to fix a “small” layout issue have you ever...
 
 ---
-@ul
 
 - Spent over an hour trying to figure what was causing the issue?
+@ul
 - Fixed it to find out you broke something else?
 - Known what was wrong and how to fix it but it required refactoring a buch of code that seemed unrelated (bad PRs)?
 - Done something dirty like write an inline style, extra class name or add `!important` to the rule?

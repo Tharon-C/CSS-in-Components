@@ -12,7 +12,7 @@ Removing side effects and taming the beast
 @ul
 
 - Spent over an hour trying to figure what was causing the issue?
-- Fix it to find out you broke something else?
+- Fixed it to find out you broke something else?
 - Known what was wrong and how to fix it but it required refactoring a buch of code that seemed unrelated (bad PRs)?
 - Done something dirty like write an inline style, extra class name or add `!important` to the rule?
 
@@ -66,7 +66,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
 ---
 
-### So who wins?
+### So... who wins?
  
 ```css
 .homepage .footer #linkList a.listitem {
@@ -107,14 +107,12 @@ A single selector can effect the whole application and the only thing stoping it
 
 ---
 
-
 ### Why components?
 
 ---
 
----
-
 ```
+
 html/
 - shopping-cart-template.html
 - callouts-template.html
@@ -129,11 +127,13 @@ css/
 - shopping-cart-template.css
 - callouts-template.css
 - products-template.css
+
 ```
 
 ---
 
 ```
+
 shopping-cart-template/
 - shopping-cart.html
 - shopping-cart.css
@@ -148,6 +148,7 @@ products-template/
 - products.html
 - products.js
 - products.css
+
 ```
 
 ---
@@ -157,18 +158,23 @@ products-template/
 ---
 
 ### Implicit coupling
-
+Parallel maintenance and a superficial relationship that requires disapline
 ---
 
 ### Side Effects
 
 ---
 
-### Why not?
+### Already joind concerns between markup and styles
+This is good, the separation is between data, state, and presentation.
 
 ---
 
 ### CSS in Components
+
+---
+
+### What does it solve?
 
 ---
 
@@ -180,10 +186,23 @@ products-template/
 
 ---
 
+Do we go into JSS or wrap it up here?
+
+---
+
 ### JSS
 
 ---
 
-### Examples 
+### JSS Examples 
 
 ---
+
+### How to handle common use cases
+
+---
+
+### where to go from here?
+
+---
+

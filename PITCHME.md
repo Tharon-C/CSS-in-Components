@@ -52,10 +52,10 @@ __image here__
 
 > Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
 
-(MDN Specificity)[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
+[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
 ---
 
-The following list of selector types increases by specificity:
+#### The following list of selector types increases by specificity:
 @ol
 - Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 - Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
@@ -67,3 +67,11 @@ The following list of selector types increases by specificity:
 A single selector can effect the whole application and the only thing stoping it is disipline
 
 ---
+
+### But there are really smart people making amazing applications. How do they avoid these problems?
+
+---
+
+## Methodologies and Tools!
+
+--- 

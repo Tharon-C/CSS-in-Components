@@ -18,3 +18,11 @@ Removing side effects and taming the beast
 
 @ulend
 
+---
+
+### Does this look familiar?
+```css
+.homepage .footer #linkList {
+    width: 50% !important
+}
+```

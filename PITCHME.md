@@ -128,9 +128,19 @@ A single selector can effect the whole application and the only thing stoping it
 
 ---
 
-... commmon between all (components)...
-
+All of these methodologies use namespacing and single selectors to avoid the issues with the cascade and specificity.
+```html
+<style>
+.widgitScope: {
+    ...
+}
+</style>
+<div class="widgetScope">
+    ...
+</div>
+```
 ---
+
 
 ### What is a component?
 

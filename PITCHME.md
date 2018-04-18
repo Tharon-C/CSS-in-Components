@@ -35,6 +35,11 @@ These are symptoms of a big problem
 
 ---
 
+### As programers we know to avoid global variables.
+We understand that constraints are better than disipline. Side effects will ruin your day and make application brittle and hard to test.
+
+---
+
 ### Why is my style being overwritten?
 
 ---
@@ -126,6 +131,7 @@ A single selector can effect the whole application and the only thing stoping it
 
 ### This is a common folder structure in an application following these methodologies
 You can see that there is an implied relationship here defining the parts that make our component.
+
 ```
 html/
 - shopping-cart-template.html
@@ -147,6 +153,7 @@ css/
 
 ### Many like ECSS takes this to the next logical step
 This makes code deletion less scary and further represents these files as a component.
+
 ```
 shopping-cart-template/
 - shopping-cart.html

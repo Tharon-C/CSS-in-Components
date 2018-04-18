@@ -23,7 +23,7 @@ Removing side effects and taming the beast
 ### Does this look familiar?
 ```css
 .homepage .footer #linkList a.listitem {
-  width: 50% !important
+  width: 50% !important;
 }
 ```
 
@@ -41,6 +41,18 @@ These are symptoms of a big problem
 ### The cascade
 Last word wins...
 
+```css
+.widget: {
+    width: 20px;
+}
+.widget: {
+    width: 10px;
+}
+/* I win! */
+.widget: {
+    width: 30px
+} 
+```
 ---
 
 ...sometimes
@@ -70,11 +82,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
  
 ```css
 .homepage .footer #linkList a.listitem {
-  background: #EFEFEF !important
+  background: #EFEFEF !important;
 }
 
 div.homepage .footer a.listitem::hover {
-  background: #F4F4F4 !important
+  background: #F4F4F4 !important;
 }
 ```
 

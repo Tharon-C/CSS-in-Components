@@ -34,20 +34,14 @@ These are symptoms of a big problem
 
 ---
 
-### Side Effects
-A single selector can effect the whole application and the only thing stoping it is disipline
-
----
-
 ### Why is my style being overwritten?
 
 ---
 
 ### The cascade
 Last word wins...
-@
-...Somtimes
-@end
+
+...Sometimes |
 
 ---
 
@@ -56,6 +50,20 @@ __image here__
 
 ---
 
-### Specificity is one of the ways the cascade decides who wins
+> Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
 
+(MDN Specificity)[https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity]
+---
+
+The following list of selector types increases by specificity:
+@ol
+- Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+- Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+- ID selectors (e.g., #example).
+@olend
 --- 
+
+### Side Effects
+A single selector can effect the whole application and the only thing stoping it is disipline
+
+---

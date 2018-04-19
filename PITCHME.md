@@ -169,7 +169,7 @@ Many have adopted the notion of a component
 <div style="background: rgba(0,0,0,.6); padding: 20px;">
  <h3>What is a component?</h3>
 </div>
---
+---
 
 ### com·po·nent
 #### /kəmˈpōnənt/

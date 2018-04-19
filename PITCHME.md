@@ -216,27 +216,8 @@ Larger Components can be built out of smaller ones
 ### Why components?
 
 ---
-Allows for Reuse
 
----
-
-Accelerates Development
-
----
-
-User Experience Consistency
-
----
-
-Optimizes the Requirements & Design Process
-
----
-
-#### It is more than that
-
----
-
-Components offer incapsulation and deterministic behaviour.
+Components offer incapsulation and deterministic behaviour
 
 ---
 
@@ -253,9 +234,26 @@ const Widget = (props) => (
 
 ---
 
+Because they are functions they can be validated, tested and prevent runtime errors
+
+---
+
+Allow for Reuse
+
+---
+
+Accelerates Development
+
+---
+
+User Experience Consistency
+
+---
+
 ### Back to the CSS
 
 ---
+
 A CSS component like in BEM is more of a logical maping of CSS selectors to an html structure
 ```html
 <style>
@@ -364,6 +362,7 @@ BEM and the like allow for one more selector defined in the component being chan
 .Sidebar .Widget { width: 100%; }
 .Footer .Widget { color: rgba(256,256,256,.8);} 
 ```
+
 ---
 
 This is a good solution given the challenges but we can do better
@@ -388,7 +387,7 @@ As a bonus we can use a fully featured programing language to manage it
 ---?image=assets/legos.jpg
 
 <div style="background: rgba(0,0,0,.8); padding: 100px 20px;">
- <h3>CSS in Components</h3>
+    <h3>CSS in Components</h3>
 </div>
 
 ---

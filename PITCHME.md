@@ -398,7 +398,11 @@ Over all these are good solutions given the challenges but we can do better
 
 ---
 
-As a bonus we can use a fully featured programing language to manage it
+As a bonus...
+@ul
+- An easy solution to theming
+- A fully featured programing language to manage it all
+@ulend
 
 ---?image=assets/legos.jpg
 
@@ -563,14 +567,12 @@ const Text = styled.div`
 <img src="assets/performance.png" width="500px"/>
 
 [The Performance of Styled React Components](https://blog.primehammer.com/the-performance-of-styled-react-components/)
----
 
+---
 
 ### JSS
 
----
-
-### JSS Examples 
+[JSS Website](http://cssinjs.org/?v=v9.8.1)
 
 ---
 

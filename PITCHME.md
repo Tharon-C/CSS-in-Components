@@ -240,10 +240,9 @@ Components offer incapsulation and deterministic behaviour.
 
 ---
 
-They can be imutible, pure functions with no side effects
+They can be pure functions with no side effects
 
 ```jsx
-
 const Widget = (props) => (
     <div>
         ...
@@ -376,13 +375,15 @@ This is a good solution given the challenges but we can do better
     @ulend
 
 ---
+
     @ul
     - Have true incapsulation and cohesion
     - We can test and catch errors
     @ulend
+
 ---
 
-    As a bonus we can use a fully featured programing language to manage it
+As a bonus we can use a fully featured programing language to manage it
 
 ---?image=assets/legos.jpg
 

@@ -166,7 +166,7 @@ Many have adopted the notion of a component
 <div class="widgetScope"> ... </div>
 ```
 ---?image=assets/control-panal.jpg
-<div style="background: rgba(0,0,0,.6); padding: 20px;">
+<div style="background: rgba(0,0,0,.8); padding: 20px;">
  <h3>What is a component?</h3>
 </div>
 ---

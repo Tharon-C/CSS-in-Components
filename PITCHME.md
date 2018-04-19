@@ -7,13 +7,13 @@ Removing side effects and taming the beast
 
 ---
 
-### While trying to fix a “small” layout issue have you ever...
+### Have you ever set out to solve what seemed to be a small layoout tweek and...
 
 ---
 
 - Spent over an hour trying to figure what was causing the issue?
 @ul
-- Fixed it to find out you broke something else?
+- Fixed it, only to find out you broke something else?
 - Known what was wrong and how to fix it but it required refactoring a buch of code that seemed unrelated (bad PRs)?
 - Done something dirty like write an inline style, extra class name or add `!important` to the rule?
 
@@ -39,13 +39,17 @@ These are symptoms of some big problems
 
 ---
 
-We know side effects will ruin your day and make application brittle and hard to test.
+We know that side effects will ruin our day. They make applications brittle and hard to test.
 
 ---
 
 We understand that *constraints* are better than *disipline*.
 
---- 
+---
+
+### These things we know to be bad are literally the core features of CSS
+
+---   
 
 ### Ok, but why is my style being overwritten?
 
@@ -55,27 +59,27 @@ We understand that *constraints* are better than *disipline*.
 Last word wins...
 
 ```css
-.widget: {
+.widget {
     width: 20px;
 }
-.widget: {
+.widget {
     width: 10px;
 }
 /* I win! */
-.widget: {
+.widget {
     width: 30px
 } 
 ```
 ---
 
-...sometimes
+### ...sometimes
 
 ---
 
 ### The Great Specificity War!
 __image here__
 
----
+---?image=images/war.jpg
 
 ### Such as in War
 We all lose

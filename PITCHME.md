@@ -79,7 +79,7 @@ Last word wins...
 ### The Great Specificity War!
 __image here__
 
----?image=images/war.jpg
+---?image=assets/war.jpg
 
 ### Such as in War
 We all lose

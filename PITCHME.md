@@ -197,7 +197,7 @@ Larger Components can be built out of smaller ones
 
 ---
 
-This is a common folder structure you will find in a project that might use BEM, ACSS, ECSS etc...
+This is a common folder structure you will find in a project that uses something like BEM, ACSS, ECSS etc...
 
 ```
 html/

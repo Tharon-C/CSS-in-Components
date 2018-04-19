@@ -80,7 +80,7 @@ Last word wins...
 
 ---
 
-### Such as in War
+### And Such as in War
 We all lose
 
 ---
@@ -126,7 +126,7 @@ A single selector can effect the whole application and the only thing stoping it
 
 ---
 
-### But there are really smart people making amazing applications. How do they avoid these problems?
+But there are really smart people making amazing applications. How do they avoid these problems?
 
 ---
 
@@ -153,6 +153,15 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 
 
 ### What is a component?
+
+---
+
+#### com·po·nent
+#### /kəmˈpōnənt/
+noun
+1. a part or element of a larger whole, especially a part of a machine or vehicle.
+
+*synonyms:*	part, piece, bit, element, constituent, ingredient, building block
 
 ---
 

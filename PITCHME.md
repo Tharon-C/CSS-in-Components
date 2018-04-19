@@ -426,7 +426,9 @@ var divStyle = {
   msTransition: 'all' // 'ms' is the only lowercase vendor prefix
 };
 
-ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
+ReactDOM.render(
+    <div style={divStyle}>Hello World!</div>,
+mountNode);
 ```
 +++
 

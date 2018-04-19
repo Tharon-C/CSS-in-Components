@@ -387,23 +387,25 @@ As a bonus we can use a fully featured programing language to manage it
 
 ---?image=assets/legos.jpg
 
-### CSS in Components
+<div style="background: rgba(0,0,0,.8); padding: 100px 20px;">
+ <h3>CSS in Components</h3>
+</div>
 
 ---
 
-### How does it solve?
+What do you mean "in" components?
 
 ---
 
-### Options
+There are many flavors but 2 approaches.
 
 ---
 
-### CSS in JS
+### Inline Styles
 
 ---
 
-Do we go into JSS or wrap it up here?
+### CSS Modules
 
 ---
 

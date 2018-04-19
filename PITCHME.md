@@ -134,7 +134,7 @@ You can write anything. The browser will just skip it
 ```html
 <div class="widgiit">oops</div>
 ```
-<code style="color: red; font-size: 32px;">`Uncaught ReferenceError: widgiit is not defined`</code>
+<code style="color: red; font-size: 32px; background: white; padding: 10px;">`Uncaught ReferenceError: widgiit is not defined`</code>
 
 ---
 

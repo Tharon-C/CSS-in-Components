@@ -35,7 +35,7 @@ These are symptoms of some big problems
 
 ---
 
-### As programers we know to avoid global variables
+As programers we know to avoid global variables
 
 ---
 
@@ -51,7 +51,7 @@ We understand that *constraints* are better than *disipline*.
 
 ---   
 
-### Ok, but why is my style being overwritten?
+Ok, but why is my style being overwritten?
 
 ---
 
@@ -81,7 +81,7 @@ Last word wins...
 ---
 
 ### And Such as in War
-We all lose
+Everyone loses
 
 ---
 
@@ -126,6 +126,18 @@ A single selector can effect the whole application and the only thing stoping it
 
 ---
 
+### No way to catch errors
+You can write anything. The browser will just skip it
+
+---
+
+```html
+<div class="widgiit">oops</div>
+```
+`Uncaught ReferenceError: widgiit is not defined`
+
+---
+
 But there are really smart people making amazing applications. How do they avoid these problems?
 
 ---
@@ -142,7 +154,11 @@ All of these methodologies avoid dealing with the cascade and specificity.
 
 ---
 
-Many have adopted the notion of a component. Rather than look at the page they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
+Many have adopted the notion of a component
+
+---
+
+ Rather than look at the page they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
 ```html
 <style>
     .widgitScope {
@@ -168,7 +184,7 @@ Many have adopted the notion of a component. Rather than look at the page they l
 
 ---
 
-In terms of React, Angular, Vue, Webcomponents, etc...
+In terms of React, Angular, Vue, Webcomponents, etc.
  
 ---
 

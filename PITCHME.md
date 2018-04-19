@@ -47,7 +47,7 @@ We understand that *constraints* are better than *disipline*.
 
 ---
 
-### These things we know to be bad are literally the core features of CSS
+### These are literally the core features of CSS
 
 ---   
 
@@ -138,7 +138,11 @@ But there are really smart people making amazing applications. How do they avoid
 
 ---
 
-All of these methodologies use namespacing and single selectors to avoid the issues with the cascade and specificity.
+All of these methodologies avoid dealing with the cascade and specificity.
+
+---
+
+Many have adopted the notion of a component. Rather than look at the page they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
 ```html
 <style>
     .widgitScope {
@@ -164,7 +168,11 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 
 ---
 
-An independent piece of software with a clear boundary that is accessible through an API
+In terms of React, Angular, Vue, Webcomponents, etc...
+ 
+---
+
+We could think of a component as independent piece of software with a clear boundary that is accessible through an API
 
 ---
 
@@ -237,8 +245,44 @@ const Widget = (props) => (
 ### Back to the CSS
 
 ---
+A CSS component like in BEM is more of a logical maping of CSS selectors to an html structure
+```html
+<style>
+    .Toggle_wrapper: {
+        ...
+    }
+    .Toggle_switch: {
+        ...   
+    }
+    .Toggle_slide: {
+        ...
+    }
 
-This is a common folder structure you will find in a project that uses something like BEM, ACSS, ECSS etc...
+    /* For accessability */
+    .Toggle_checkbox: {
+        ...
+    }
+    .Toggle_label: {
+        ...
+    }
+</style>
+<div class="Toggle_wrapper">
+    <div class="Toggle_slide">
+        <div class="Toggle_switch"></div>
+    </div>
+    <!-- For accesability -->
+    <form>
+        <label class="Toggle_label">Turn me on</label>
+        <input type="checkbox" class="Toggle_checkbox"/>
+    </form>
+</div>
+``` 
+---
+
+The structure is implied by the CSS
+
+---
+This is how a project that uses something like BEM, ACSS, ECSS etc. is usually organized
 
 ```
 html/

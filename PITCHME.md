@@ -90,7 +90,7 @@ Everyone loses
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 ---
 
-### The following list of selector types increases by specificity:
+The following list of selector types increases by specificity:
 @ol
 - Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 - Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).

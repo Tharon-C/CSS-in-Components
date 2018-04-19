@@ -433,6 +433,30 @@ mountNode);
 +++
 
 ### Prefixing
+```js
+import Prefixer from 'inline-style-prefixer'
+
+const style = {
+  transition: '200ms all linear',
+  userSelect: 'none',
+  boxSizing: 'border-box',
+  display: 'flex',
+  color: 'blue'
+}
+
+const prefixer = new Prefixer()
+const prefixedStyle = prefixer.prefix(style)
+
+// prefixedStyle === output
+const output = {
+  transition: '200ms all linear',
+  WebkitUserSelect: 'none',
+  boxSizing: 'border-box',
+  display: '-webkit-flex',
+  color: 'blue'
+}
+```
+
 https://github.com/rofrischmann/inline-style-prefixer
 
 +++

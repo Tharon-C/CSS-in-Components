@@ -417,6 +417,7 @@ There are many flavors but 2 approaches.
 ---
 
 ### Inline Styles
+
 ```jsx
 var divStyle = {
   color: 'white',

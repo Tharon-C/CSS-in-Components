@@ -43,7 +43,7 @@ We know side effects will ruin your day and make application brittle and hard to
 
 ---
 
-We understand that constraints are better than disipline.
+We understand that *constraints* are better than *disipline*.
 
 --- 
 

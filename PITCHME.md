@@ -196,6 +196,47 @@ Larger Components can be built out of smaller ones
 ### Why components?
 
 ---
+Allows for Reuse
+
+---
+
+Accelerates Development
+
+---
+
+User Experience Consistency
+
+---
+
+Optimizes the Requirements & Design Process
+
+---
+
+#### It is more than that
+
+---
+
+Components offer incapsulation and deterministic behaviour.
+
+---
+
+They can be imutible, pure functions with no side effects
+
+```jss
+
+const Widget = (props) => (
+    <div>
+        ...
+    </div>
+)
+
+```
+
+---
+
+### Back to the CSS
+
+---
 
 This is a common folder structure you will find in a project that uses something like BEM, ACSS, ECSS etc...
 
@@ -218,9 +259,7 @@ css/
 
 ---
 
-### Many like ECSS takes this to the next logical step
-This makes code deletion less scary and further represents these files as a component.
-
+More and more projects are taking this one step further
 ```
 shopping-cart-template/
 - shopping-cart.html
@@ -246,15 +285,37 @@ products-template/
 ---
 
 ### Implicit coupling
-This is just a superficial relationship that requires disipline and parallel maintanance. Still have global variabls so scoping only happens through naming conventions.  
----
-
-### Side Effects
+This is just a superficial relationship that requires parallel maintanance. Scoping happens through naming conventions and disipline.
 
 ---
 
-### Already joind concerns between markup and styles
-This is good, a better separation in a modern application is between data, state, and presentation.
+It is common for a "CSS component" to be a little different in a given context like the footer vs the sidebar 
+
+---
+
+BEM and the like allow for one more selector defined in the component being changed.
+
+```SCSS
+// SCSS syntax
+.Widget {
+    width: 50%;
+    color: rgba(0,0,0,.8);
+    .Sidebar & {
+        width: 100%;
+    }
+    .Footer & {
+        color: rgba(256,256,256,.8);
+    }
+}
+
+// Output
+.widget { width: 50%; color: rgba(0,0,0,.8);  }
+.Sidebar .Widget { width: 100%; }
+.Footer .Widget { color: rgba(256,256,256,.8);} 
+```
+--
+
+This is a good solution given the challenge but we can do better
 
 ---
 

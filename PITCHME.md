@@ -324,10 +324,6 @@ products-template/
 
 ---
 
-### Why do we need better?
-
----
-
 ### Implicit coupling
 This is just a superficial relationship that requires parallel maintanance. Scoping happens through naming conventions and disipline.
 
@@ -359,7 +355,7 @@ BEM and the like allow for one more selector defined in the component being chan
 ```
 --
 
-This is a good solution given the challenge but we can do better
+This is a good solution given the challenges but we can do better
 
 ---
 

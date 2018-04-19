@@ -1,4 +1,3 @@
-
 ---?image=assets/the-beast.png
 
 <div style="background: rgba(0,0,0,.6); padding: 20px;">
@@ -145,9 +144,11 @@ You can write anything. The browser will just skip it
 
 But there are really smart people making amazing applications. How do they avoid these problems?
 
----
+---?image=assets/methodology.jpg
 
-## Methodologies and Tools!
+<div style="background: rgba(0,0,0,.6); padding: 20px;">
+<h2> Methodologies and Tools! </h2>
+</div>
 
 ---
 

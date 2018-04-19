@@ -526,12 +526,11 @@ var styles = {
 
 +++
 
-    ### Styled Components
+### Styled Components
 
 +++
 
-```jsx
-
+```js
 import styled from 'styled-components';
 
 const Text = styled.div`
@@ -540,7 +539,6 @@ const Text = styled.div`
 `
 
 <Text>Hello CSS-in-JS</Text>
-
 ```
 
 +++

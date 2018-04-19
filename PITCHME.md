@@ -14,7 +14,7 @@ Have you ever set out to solve what seemed to be a small layoout tweek and...
 - Spent over an hour trying to figure what was causing the issue?
 @ul
 - Fixed it, only to find out you broke something else?
-- Known what was wrong and how to fix it but it required refactoring a buch of code that seemed unrelated (bad PRs)?
+- Known what was wrong and how to fix it but it required refactoring a bunch of code that seemed unrelated (bad PRs)?
 - Done something dirty like write an inline style, extra class name or add `!important` to the rule?
 
 @ulend
@@ -30,12 +30,12 @@ Have you ever set out to solve what seemed to be a small layoout tweek and...
 
 ---
 
-### Its not your fault
+### It's not your fault
 These are symptoms of some big problems
 
 ---
 
-As programers we know to avoid global variables
+As programmers we know to avoid global variables
 
 ---
 
@@ -43,7 +43,7 @@ We know that side effects will ruin our day. They make applications brittle and 
 
 ---
 
-We understand that *constraints* are better than *disipline*.
+We understand that *constraints* are better than *discipline*.
 
 ---
 
@@ -106,7 +106,7 @@ The following list of selector types increases by specificity:
   background: #EFEFEF !important;
 }
 
-div.homepage .footer a.listitem::hover {
+div.homepage .footer a.listitem:hover {
   background: #F4F4F4 !important;
 }
 ```
@@ -116,7 +116,7 @@ Specificity Calculator: https://specificity.keegan.st/
 --- 
 
 ### Side Effects
-A single selector can effect the whole application and the only thing stoping it is disipline
+A single selector can effect the whole application and the only thing stopping it is discipline
 
 ```css
 * {
@@ -230,7 +230,7 @@ Larger Components can be built out of smaller ones
 
 ---
 
-Components offer incapsulation and deterministic behaviour
+Components offer encapsulation and deterministic behaviour
 
 ---
 
@@ -267,7 +267,7 @@ User Experience Consistency
 
 ---
 
-A component in something like SUITCSS is more of a logical maping of CSS selectors to an html structure
+A component in something like SUITCSS is more of a logical mapping of CSS selectors to an html structure
 ```html
 <style
     .Toggle-wrapper: {
@@ -283,7 +283,7 @@ A component in something like SUITCSS is more of a logical maping of CSS selecto
         ...
     }
 
-    /* For accessability */
+    /* For accessibility */
     .Toggle-checkbox: {
         ...
     }
@@ -295,7 +295,7 @@ A component in something like SUITCSS is more of a logical maping of CSS selecto
     <div class="Toggle_slide">
         <div class="Toggle_switch"></div>
     </div>
-    <!-- For accesability -->
+    <!-- For accessibility -->
     <form>
         <label class="Toggle_label">Turn me on</label>
         <input type="checkbox" class="Toggle_checkbox"/>
@@ -350,7 +350,7 @@ products-template/
 ---
 
 ### Implicit coupling
-This is a superficial relationship that requires parallel maintanance. Scoping happens through naming conventions and disipline.
+This is a superficial relationship that requires parallel maintenance. Scoping happens through naming conventions and discipline.
 
 ---
 
@@ -381,18 +381,18 @@ In this case we could allow for one more selector defined in the component being
 
 ---
 
-Over all these are good solutions given the challenges but we can do better
+Overall these are good solutions given the challenges but we can do better
 
 ---
     @ul
-    - Use constraints over disipline
-    - Eleminate potential for side effects
+    - Use constraints over discipline
+    - Eliminate potential for side effects
     @ulend
 
 ---
 
     @ul
-    - Have true incapsulation and cohesion
+    - Have true encapsulation and cohesion
     - We can test and catch errors
     @ulend
 

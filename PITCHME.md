@@ -255,7 +255,7 @@ Allow for Reuse
 
 ---
 
-Accelerates Development
+Accelerate Development
 
 ---
 
@@ -267,24 +267,27 @@ User Experience Consistency
 
 ---
 
-A CSS component like in BEM is more of a logical maping of CSS selectors to an html structure
+A component in something like SUITCSS is more of a logical maping of CSS selectors to an html structure
 ```html
-<style>
-    .Toggle_wrapper: {
+<style
+    .Toggle-wrapper: {
         ...
     }
-    .Toggle_switch: {
+    .Toggle-switch: {
         ...   
     }
-    .Toggle_slide: {
+    .Toggle-switch--on {
+        ...
+    }
+    .Toggle-slide: {
         ...
     }
 
     /* For accessability */
-    .Toggle_checkbox: {
+    .Toggle-checkbox: {
         ...
     }
-    .Toggle_label: {
+    .Toggle-label: {
         ...
     }
 </style>
@@ -304,7 +307,7 @@ A CSS component like in BEM is more of a logical maping of CSS selectors to an h
 The structure is implied by the CSS
 
 ---
-This is how a project that uses something like BEM, ACSS, ECSS etc. is usually organized
+This is how a project that uses something like BEM, SUITCSS, ECSS etc. is usually organized
 
 ```
 html/
@@ -347,7 +350,7 @@ products-template/
 ---
 
 ### Implicit coupling
-This is just a superficial relationship that requires parallel maintanance. Scoping happens through naming conventions and disipline.
+This is a superficial relationship that requires parallel maintanance. Scoping happens through naming conventions and disipline.
 
 ---
 
@@ -355,7 +358,7 @@ It is common for a component to be a little different in a given context like th
 
 ---
 
-BEM and the like allow for one more selector defined in the component being changed.
+In this case we could allow for one more selector defined in the component being changed. We could consider this a context modifier.
 
 ```SCSS
 // SCSS syntax
@@ -378,7 +381,7 @@ BEM and the like allow for one more selector defined in the component being chan
 
 ---
 
-This is a good solution given the challenges but we can do better
+Over all these are good solutions given the challenges but we can do better
 
 ---
     @ul

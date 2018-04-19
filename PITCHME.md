@@ -1,6 +1,6 @@
 ---?image=assets/the-beast.png
 
-<div style="background: rgba(0,0,0,.6); padding: 20px;">
+<div style="background: rgba(0,0,0,.8); padding: 20px;">
 <h3>CSS in Components</h3>
 Removing side effects and taming the beast
 </div>
@@ -146,7 +146,7 @@ But there are really smart people making amazing applications. How do they avoid
 
 ---?image=assets/methodology.jpg
 
-<div style="background: rgba(0,0,0,.6); padding: 20px;">
+<div style="background: rgba(0,0,0,.8); padding: 20px;">
 <h2> Methodologies and Tools! </h2>
 </div>
 

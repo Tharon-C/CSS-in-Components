@@ -146,7 +146,7 @@ But there are really smart people making amazing applications. How do they avoid
 
 ---
 
-### BEM / SUITCSS, ECSS, SMCSS, ACSS
+### BEM, SUITCSS, ECSS, SMCSS, ACSS
 
 +++
 ### BEM
@@ -156,7 +156,7 @@ http://getbem.com/
 
 +++
 
-###SUITCSS
+### SUITCSS
 > SUIT CSS is a reliable and testable styling methodology for component-based UI development. A collection of CSS packages and build tools are available as modules. SUIT CSS plays well with React, Ember, Angular, and other component-based approaches to UI development.
 
 https://suitcss.github.io/

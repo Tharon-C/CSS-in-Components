@@ -74,12 +74,12 @@ Last word wins...
 
 ### ...sometimes
 
----
+---?image=assets/war.jpg
 
 ### The Great Specificity War!
 __image here__
 
----?image=assets/war.jpg
+---
 
 ### Such as in War
 We all lose

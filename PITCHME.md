@@ -156,9 +156,9 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 
 ---
 
-#### com·po·nent
+### com·po·nent
 #### /kəmˈpōnənt/
-noun
+**noun**
 1. a part or element of a larger whole, especially a part of a machine or vehicle.
 
 *synonyms:*	part, piece, bit, element, constituent, ingredient, building block

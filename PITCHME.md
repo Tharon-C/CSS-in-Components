@@ -146,7 +146,20 @@ But there are really smart people making amazing applications. How do they avoid
 
 ---
 
-### BEM / SUITCSS, ACSS, SMCSS, ECSS
+### BEM / SUITCSS, ECSS, SMCSS, ACSS
+
++++
+### BEM
+> — Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development
+
+http://getbem.com/
+
++++
+
+###SUITCSS
+> SUIT CSS is a reliable and testable styling methodology for component-based UI development. A collection of CSS packages and build tools are available as modules. SUIT CSS plays well with React, Ember, Angular, and other component-based approaches to UI development.
+
+https://suitcss.github.io/
 
 ---
 

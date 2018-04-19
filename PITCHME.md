@@ -341,7 +341,7 @@ This is just a superficial relationship that requires parallel maintanance. Scop
 
 ---
 
-It is common for a "CSS component" to be a little different in a given context like the footer vs the sidebar 
+It is common for a component to be a little different in a given context like the footer vs the sidebar 
 
 ---
 
@@ -365,7 +365,7 @@ BEM and the like allow for one more selector defined in the component being chan
 .Sidebar .Widget { width: 100%; }
 .Footer .Widget { color: rgba(256,256,256,.8);} 
 ```
---
+---
 
 This is a good solution given the challenges but we can do better
 

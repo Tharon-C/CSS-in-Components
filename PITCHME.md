@@ -171,24 +171,24 @@ An independent piece of software with a clear boundary and is accessible through
 ![Image of a toggle component](assets/toggle-component.png)
 
 ---
+
 ```jsx
 <Toggle
     label="Simple"
-    style={styles.toggle}
 />
 <Toggle
     label="Toggled by default"
     defaultToggled={true}
-    style={styles.toggle}
 />
 <Toggle
     label="Disabled"
     disabled={true}
-    style={styles.toggle}
+    onChange={ doSomthing }
 />
 ```
 ---
 
+Larger Components can be built out of smaller ones
 ![Complex component](assets/media-card.png)
 
 ---

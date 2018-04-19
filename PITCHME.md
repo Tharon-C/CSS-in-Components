@@ -161,13 +161,9 @@ Many have adopted the notion of a component
  Rather than look at the page they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
 ```html
 <style>
-    .widgitScope {
-        ...
-    }
+    .widgitScope { ... }
 </style>
-<div class="widgetScope">
-    ...
-</div>
+<div class="widgetScope"> ... </div>
 ```
 ---
 

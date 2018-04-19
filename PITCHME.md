@@ -164,7 +164,7 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 
 ---
 
-An independent piece of software with a clear boundary and is accessible through an API
+An independent piece of software with a clear boundary that is accessible through an API
 
 ---
 
@@ -197,8 +197,7 @@ Larger Components can be built out of smaller ones
 
 ---
 
-### This is a common folder structure in an application following these methodologies
-You can see that there is an implied relationship here defining the parts that make our component.
+This is a common folder structure you will find in a project that might use BEM, ACSS, ECSS etc...
 
 ```
 html/

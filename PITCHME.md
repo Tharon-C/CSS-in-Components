@@ -151,7 +151,6 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 ```
 ---
 
-
 ### What is a component?
 
 ---
@@ -162,6 +161,15 @@ All of these methodologies use namespacing and single selectors to avoid the iss
 1. a part or element of a larger whole, especially a part of a machine or vehicle.
 
 *synonyms:*	part, piece, bit, element, constituent, ingredient, building block
+
+---
+
+An independent piece of software with a clear boundary and is accessible through an API
+
+---
+
+![Image of a toggle component](assets/toggle-component.png)
+
 
 ---
 

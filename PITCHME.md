@@ -242,7 +242,7 @@ Components offer incapsulation and deterministic behaviour.
 
 They can be imutible, pure functions with no side effects
 
-```jss
+```jsx
 
 const Widget = (props) => (
     <div>

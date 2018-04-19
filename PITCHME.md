@@ -561,7 +561,7 @@ const Text = styled.div`
 ---
 
 ![Complex component](assets/performance.png)
-
+https://blog.primehammer.com/the-performance-of-styled-react-components/
 ---
 
 

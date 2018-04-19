@@ -147,7 +147,7 @@ But there are really smart people making amazing applications. How do they avoid
 ---?image=assets/methodology.jpg
 
 <div style="background: rgba(0,0,0,.8); padding: 20px;">
-<h2> Methodologies and Tools! </h2>
+<h3> Methodologies and Tools! </h3>
 </div>
 
 ---
@@ -177,7 +177,7 @@ Many have adopted the notion of a component
 
 ---
 
- Rather than look at the page they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
+ Rather than look at styling the page, they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
 ```html
 <style>
     .widgitScope { ... }

@@ -72,11 +72,11 @@ Last word wins...
 ```
 ---
 
-### ...sometimes
-
+...sometimes
 ---?image=assets/war.jpg
-
-### The Great Specificity War!
+<div style="background: rgba(0,0,0,.6); padding: 20px;">
+    <h3> The Great Specificity War!</h3>
+</div>
 
 ---
 

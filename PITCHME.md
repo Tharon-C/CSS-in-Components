@@ -165,11 +165,11 @@ Many have adopted the notion of a component
 </style>
 <div class="widgetScope"> ... </div>
 ```
----
-
+---?image=assets/control-panal.jpg
+<div style="background: rgba(0,0,0,.6); padding: 20px;">
 ### What is a component?
-
----
+</div>
+--
 
 ### com·po·nent
 #### /kəmˈpōnənt/
@@ -370,12 +370,27 @@ BEM and the like allow for one more selector defined in the component being chan
 This is a good solution given the challenges but we can do better
 
 ---
+    @ul
+    - Use constraints over disipline
+    - Eleminate potential for side effects
+    @ulend
+
+---
+    @ul
+    - Have true incapsulation and cohesion
+    - We can test and catch errors
+    @ulend
+---
+
+    As a bonus we can use a fully featured programing language to manage it
+
+---?image=assets/legos.jpg
 
 ### CSS in Components
 
 ---
 
-### What does it solve?
+### How does it solve?
 
 ---
 

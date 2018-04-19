@@ -167,7 +167,7 @@ Many have adopted the notion of a component
 ```
 ---?image=assets/control-panal.jpg
 <div style="background: rgba(0,0,0,.6); padding: 20px;">
-### What is a component?
+ <h3>What is a component?</h3>
 </div>
 --
 

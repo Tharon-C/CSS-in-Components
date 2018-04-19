@@ -31,16 +31,23 @@ Removing side effects and taming the beast
 ---
 
 ### Its not your fault
-These are symptoms of a big problem
+These are symptoms of some big problems
 
 ---
 
-### As programers we know to avoid global variables.
-We understand that constraints are better than disipline. Side effects will ruin your day and make application brittle and hard to test.
+### As programers we know to avoid global variables
 
 ---
 
-### Why is my style being overwritten?
+We know side effects will ruin your day and make application brittle and hard to test.
+
+---
+
+We understand that constraints are better than disipline.
+
+--- 
+
+### Ok, but why is my style being overwritten?
 
 ---
 
@@ -131,9 +138,9 @@ A single selector can effect the whole application and the only thing stoping it
 All of these methodologies use namespacing and single selectors to avoid the issues with the cascade and specificity.
 ```html
 <style>
-.widgitScope: {
-    ...
-}
+    .widgitScope {
+        ...
+    }
 </style>
 <div class="widgetScope">
     ...

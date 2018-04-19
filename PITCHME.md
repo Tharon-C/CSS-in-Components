@@ -1,4 +1,6 @@
----?image=assets/the-beast.jpg
+
+---?image=assets/the-beast.png
+
 <div style="background: rgba(0,0,0,.6); padding: 20px;">
 <h3>CSS in Components</h3>
 Removing side effects and taming the beast

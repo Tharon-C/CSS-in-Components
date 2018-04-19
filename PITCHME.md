@@ -77,7 +77,6 @@ Last word wins...
 ---?image=assets/war.jpg
 
 ### The Great Specificity War!
-__image here__
 
 ---
 

@@ -562,8 +562,7 @@ const Text = styled.div`
 
 <img src="assets/performance.png" width="500px"/>
 
-[The Performance of Styled React Components]
-(https://blog.primehammer.com/the-performance-of-styled-react-components/)
+[The Performance of Styled React Components](https://blog.primehammer.com/the-performance-of-styled-react-components/)
 ---
 
 

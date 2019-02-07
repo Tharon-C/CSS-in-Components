@@ -7,6 +7,13 @@ Removing side effects and taming the beast
 
 ---
 
+#### Why we are here
+- What's wrong with css
+- How we currently deal with it
+- How we can do better
+
+---
+
 ## Whats wrong with CSS?
 
 ---

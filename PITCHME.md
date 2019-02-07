@@ -7,7 +7,7 @@ Removing side effects and taming the beast
 
 ---
 
-#### Why we are here
+### Why we are here
 Making a case for CSS in JS
 
 ---

@@ -23,17 +23,19 @@ An hour later, WTF!?
 
 ---
 
-We know what is wrong and how to fix it
-But...
+We know what is wrong and how to fix it, but...
 
 ---
 
-It requires a lot of refactoring unrelated code (bad PRs)?
+Refactoring unrelated code = Bad PRs
 
 ---
 
 Just a quick fix "for now" 
-```!important```
+
+```js
+!important
+```
 
 ---
 
@@ -54,7 +56,8 @@ It's your teammate's fault
 
 ---
 
-> "We live in a society people!" --George Costanza
+> "We live in a society people!"
+--George Costanza
 
 ---
 
@@ -62,11 +65,11 @@ Can we agree on three things?
 
 ---
 
-@ol
-#1 He who writes a global variable shall be shot!
-#2 Side effects suck!
-#3 *Constraint* over *Discipline*
-@olend
+@ul
+1. He who writes a global variable shall be shot!
+2. Side effects suck!
+3. *Constraint* over *Discipline*
+@ulend
 
 ---
 
@@ -74,11 +77,11 @@ Can we agree on three things?
 
 ---
 
-@ol
-#1 Global variables are powerful 
-#2 With one selector you can change the whole website
-#3 CSS is forgiving
-@olend
+@ul
+1. Global variables are powerful 
+2. With one selector you can change the whole website
+3. CSS is forgiving
+@ulend
 
 ---
 
@@ -449,10 +452,11 @@ Or use utilities
 ```SCSS
 
     .u-fullwidth {
-        width: 100% !important
+        width: 100% !important;
     }
+
     .u-whiteText {
-        color: rgba(256,256,256,.8) !important
+        color: rgba(256,256,256,.8) !important;
     }
 
 ```
@@ -475,6 +479,13 @@ But we can do better
 @ul
 - Have true encapsulation and cohesion
 - Test and catch errors
+@ulend
+
+---
+
+@ul
+- Easy / Auto code deletion
+- Perform complex calculations and generate design systems
 @ulend
 
 ---
@@ -549,7 +560,7 @@ https://github.com/rofrischmann/inline-style-prefixer
 ### Radium
 Gives you things like hover, media queries vender prefixing in a css like syntax
 
-+++
+---
 
 ```jsx
 

@@ -15,13 +15,25 @@ This will just take a few minutes to fix
 
 ---
 
-- Spent over an hour trying to figure what was causing the issue?
+An hour later, WTF!?
 @ul
-- Fixed it, only to find out you broke something else?
-- Known what was wrong and how to fix it but it required refactoring a bunch of code that seemed unrelated (bad PRs)?
-- Done something dirty like write an inline style, extra class name or add `!important` to the rule?
-
+- Fixed it!
+- And... broke ten other things?
 @ulend
+
+---
+
+We know what is wrong and how to fix it
+But...
+
+---
+
+It requires a lot of refactoring unrelated code (bad PRs)?
+
+---
+
+Just a quick fix "for now" 
+```!important```
 
 ---
 
@@ -35,33 +47,46 @@ This will just take a few minutes to fix
 ---
 
 ### It's not your fault
-These are symptoms of some big problems
 
 ---
 
-As programmers we know to avoid global variables
+It's your teammate's fault
 
 ---
 
-We know that side effects will ruin our day. They make applications brittle and hard to test.
+> "We live in a society people!" --George Costanza
 
 ---
 
-We understand that *constraints* are better than *discipline*.
+Can we agree on three things?
 
 ---
 
-### These are literally the core features of CSS
-
----   
-
-Ok, but why is my style being overwritten?
+@ol
+#1 He who writes a global variable shall be shot!
+#2 Side effects suck!
+#3 *Constraint* over *Discipline*
+@olend
 
 ---
 
-### The cascade
-Last word wins...
+### CSS disagrees
 
+---
+
+@ol
+#1 Global variables are powerful 
+#2 With one selector you can change the whole website
+#3 CSS is forgiving
+@olend
+
+---
+
+### The C in CSS
+He who has the last word wins
+
+---
+### The Cascade
 ```css
 .widget {
     width: 20px;
@@ -77,6 +102,7 @@ Last word wins...
 ---
 
 ...sometimes
+
 ---?image=assets/war.jpg
 <div style="background: rgba(0,0,0,.6); padding: 20px;">
     <h3> The Great Specificity War!</h3>
@@ -84,14 +110,19 @@ Last word wins...
 
 ---
 
-### And Such as in War
+#### And such as in war
 Everyone loses
 
 ---
 
-> Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied.
+What is Specificity?
+
+---
+
+> Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. --MDN
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
 ---
 
 The following list of selector types increases by specificity:
@@ -120,7 +151,7 @@ Specificity Calculator: https://specificity.keegan.st/
 --- 
 
 ### Side Effects
-A single selector can effect the whole application and the only thing stopping it is discipline
+The only thing we have is self discipline
 
 ```css
 * {
@@ -131,7 +162,14 @@ A single selector can effect the whole application and the only thing stopping i
 ---
 
 ### No way to catch errors
-You can write anything. The browser will just skip it
+
+---
+
+CSS is like that mother who loves her child too much...
+
+---
+
+The browser is too forgiving
 
 ---
 
@@ -142,7 +180,7 @@ You can write anything. The browser will just skip it
 
 ---
 
-But there are really smart people making amazing applications. How do they avoid these problems?
+But people make amazing applications CSS!
 
 ---?image=assets/methodology.jpg
 
@@ -152,15 +190,17 @@ But there are really smart people making amazing applications. How do they avoid
 
 ---
 
-### BEM, SUITCSS, ECSS, SMCSS, ACSS
+### Scope through name spacing 
+BEM, SUITCSS, ECSS, SMCSS, ACSS
 
-+++
+---
+
 ### BEM
 > — Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development
 
 http://getbem.com/
 
-+++
+---
 
 ### SUITCSS
 > SUIT CSS is a reliable and testable styling methodology for component-based UI development. A collection of CSS packages and build tools are available as modules. SUIT CSS plays well with React, Ember, Angular, and other component-based approaches to UI development.
@@ -169,15 +209,15 @@ https://suitcss.github.io/
 
 ---
 
-All of these methodologies avoid dealing with the cascade and specificity.
+All of these methodologies avoid dealing with the cascade and specificity through single selectors.
 
 ---
 
-Many have adopted the notion of a component
+As we see with BEM and SUITCSS there is the notion of a component
 
 ---
 
- Rather than look at styling the page, they look at all of the reusable pieces that make up the page and style them as isolated units with single class names. 
+ Rather than styling the page, they look the reusable pieces that make up the page 
 ```html
 <style>
     .widgitScope { ... }
@@ -186,7 +226,7 @@ Many have adopted the notion of a component
 ```
 ---?image=assets/control-panal.jpg
 <div style="background: rgba(0,0,0,.8); padding: 100px 20px;">
- <h3>What is a component?</h3>
+ <h3>Components</h3>
 </div>
 ---
 
@@ -199,11 +239,7 @@ Many have adopted the notion of a component
 
 ---
 
-In terms of React, Angular, Vue, Webcomponents, etc.
- 
----
-
-We could think of a component as independent piece of software with a clear boundary that is accessible through an API
+In programming a component is defined as an independent piece of software with a clear boundary accessible through an API
 
 ---
 
@@ -212,18 +248,18 @@ We could think of a component as independent piece of software with a clear boun
 ---
 
 ```jsx
-<Toggle
-    label="Simple"
-/>
-<Toggle
-    label="Toggled by default"
-    defaultToggled={true}
-/>
-<Toggle
-    label="Disabled"
-    disabled={true}
-    onChange={ doSomthing }
-/>
+    <Toggle
+        label="Simple"
+    />
+    <Toggle
+        label="Toggled by default"
+        defaultToggled={true}
+    />
+    <Toggle
+        label="Disabled"
+        disabled={true}
+        onChange={ doSomthing }
+    />
 ```
 ---
 
@@ -236,7 +272,7 @@ Larger Components can be built out of smaller ones
 
 ---
 
-Components offer encapsulation and deterministic behaviour
+Components offer encapsulation and deterministic behavior
 
 ---
 
@@ -273,7 +309,7 @@ User Experience Consistency
 
 ---
 
-A component in something like SUITCSS is more of a logical mapping of CSS selectors to an html structure
+A component in CSS is just a logical mapping of CSS selectors to an html structure
 ```html
 <style
     .Toggle-wrapper: {
@@ -313,7 +349,7 @@ A component in something like SUITCSS is more of a logical mapping of CSS select
 The structure is implied by the CSS
 
 ---
-This is how a project that uses something like BEM, SUITCSS, ECSS etc. is usually organized
+A project that uses something like BEM, SUITCSS, ECSS etc. might look like this
 
 ```
 html/
@@ -334,7 +370,7 @@ css/
 
 ---
 
-More and more projects are taking this one step further
+Some projects take this a step further
 ```
 shopping-cart-template/
 - shopping-cart.html
@@ -356,15 +392,16 @@ products-template/
 ---
 
 ### Implicit coupling
-This is a superficial relationship that requires parallel maintenance. Scoping happens through naming conventions and discipline.
+This is a superficial relationship that requires parallel maintenance
+Scoping happens through naming conventions and discipline
 
 ---
 
-It is common for a component to be a little different in a given context like the footer vs the sidebar 
+A component might have variations in a given context like the footer vs the sidebar 
 
 ---
 
-In this case we could allow for one more selector defined in the component being changed. We could consider this a context modifier.
+We could consider a context modifier
 
 ```SCSS
 // SCSS syntax
@@ -384,30 +421,68 @@ In this case we could allow for one more selector defined in the component being
 .Sidebar .Widget { width: 100%; }
 .Footer .Widget { color: rgba(256,256,256,.8);} 
 ```
+---
+
+Or a variant modifier
+```SCSS
+// SCSS syntax
+.Widget {
+    width: 50%;
+    color: rgba(0,0,0,.8);
+    &.--fullWidth {
+        width: 100%;
+    }
+    &.--whiteText {
+        color: rgba(256,256,256,.8);
+    }
+}
+
+// Output
+.widget { width: 50%; color: rgba(0,0,0,.8);  }
+.Widget.--fullWidth { width: 100%; }
+.Widget.--whiteText { color: rgba(256,256,256,.8);} 
+```
+---
+
+Or use utilities
+
+```SCSS
+
+    .u-fullwidth {
+        width: 100% !important
+    }
+    .u-whiteText {
+        color: rgba(256,256,256,.8) !important
+    }
+
+```
 
 ---
 
-Overall these are good solutions given the challenges but we can do better
-
----
-    @ul
-    - Use constraints over discipline
-    - Eliminate potential for side effects
-    @ulend
+These are decent solutions given the challenges
 
 ---
 
-    @ul
-    - Have true encapsulation and cohesion
-    - We can test and catch errors
-    @ulend
+But we can do better
+
+---
+@ul
+- Use constraints over discipline
+- Eliminate potential for side effects
+@ulend
+---
+
+@ul
+- Have true encapsulation and cohesion
+- Test and catch errors
+@ulend
 
 ---
 
 As a bonus...
 @ul
 - An easy solution to theming
-- A fully featured programing language to manage it all
+- Use fully featured programing language to manage it all
 @ulend
 
 ---?image=assets/legos.jpg
@@ -440,7 +515,7 @@ ReactDOM.render(
     <div style={divStyle}>Hello World!</div>,
 mountNode);
 ```
-+++
+---
 
 ### Prefixing
 ```js
@@ -469,7 +544,7 @@ const output = {
 
 https://github.com/rofrischmann/inline-style-prefixer
 
-+++
+---
 
 ### Radium
 Gives you things like hover, media queries vender prefixing in a css like syntax
@@ -486,13 +561,24 @@ class Button extends React.Component {
   static propTypes = {
     kind: PropTypes.oneOf(['primary', 'warning']).isRequired
   };
+  var styles = {
+    base: {
+      color: '#fff',
+      ':hover': {
+        background: color('#0074d9').lighten(0.2).hexString()
+      }
+    },
+
+    primary: {
+      background: '#0074D9'
+    },
+
+    warning: {
+      background: '#FF4136'
+    }
+  };
 
   render() {
-    // Radium extends the style attribute to accept an array. It will merge
-    // the styles in order. We use this feature here to apply the primary
-    // or warning styles depending on the value of the `kind` prop. Since its
-    // all just JavaScript, you can use whatever logic you want to decide which
-    // styles are applied (props, state, context, etc).
     return (
       <button
         style={[
@@ -506,39 +592,17 @@ class Button extends React.Component {
 }
 
 Button = Radium(Button);
-
-// You can create your style objects dynamically or share them for
-// every instance of the component.
-var styles = {
-  base: {
-    color: '#fff',
-
-    // Adding interactive state couldn't be easier! Add a special key to your
-    // style object (:hover, :focus, :active, or @media) with the additional rules.
-    ':hover': {
-      background: color('#0074d9').lighten(0.2).hexString()
-    }
-  },
-
-  primary: {
-    background: '#0074D9'
-  },
-
-  warning: {
-    background: '#FF4136'
-  }
-};
 ```
 
 ---
 
 ### CSS in JS
 
-+++
+---
 
 ### Styled Components
 
-+++
+---
 
 ```js
 import styled from 'styled-components';
@@ -551,7 +615,7 @@ const Text = styled.div`
 <Text>Hello CSS-in-JS</Text>
 ```
 
-+++
+---
 
 ```html
 <style>

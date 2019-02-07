@@ -11,7 +11,7 @@ Removing side effects and taming the beast
 
 ---
 
-Have you ever set out to solve what seemed to be a small layoout tweek and...
+This will just take a few minutes to fix
 
 ---
 

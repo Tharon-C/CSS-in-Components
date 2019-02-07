@@ -9,6 +9,9 @@ Removing side effects and taming the beast
 
 #### Why we are here
 Making a case for CSS in JS
+
+---
+
 - What's wrong with CSS
 - How we currently deal with it
 - How we can do better

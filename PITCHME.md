@@ -429,8 +429,7 @@ A component in CSS is just a logical mapping of CSS selectors to an html structu
 </div>
 ``` 
 
-___
-
+---
 
 The structure is implied by the CSS
 

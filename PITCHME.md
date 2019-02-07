@@ -205,7 +205,7 @@ But people make amazing applications CSS!
 
 ---
 
-### Scope through name spacing 
+#### Scope through name spacing 
 BEM, SUITCSS, ECSS, SMCSS, ACSS
 
 ---
@@ -215,6 +215,10 @@ BEM, SUITCSS, ECSS, SMCSS, ACSS
 
 http://getbem.com/
 
+Notes:
+
+- Show that is a component
+
 ---
 
 ### SUITCSS
@@ -222,23 +226,29 @@ http://getbem.com/
 
 https://suitcss.github.io/
 
+Notes:
+
+- Highlight component
 ---
 
 All of these methodologies avoid dealing with the cascade and specificity through single selectors.
 
 ---
 
-As we see with BEM and SUITCSS there is the notion of a component
+As we saw with BEM and SUITCSS, there is the notion of a component
 
 ---
 
- Rather than styling the page, they look the reusable pieces that make up the page 
+ Rather than styling the page, we look at the reusable pieces that make up the page 
 ```html
 <style>
     .widgitScope { ... }
 </style>
 <div class="widgetScope"> ... </div>
 ```
+Notes:
+
+- CSS is moving towards components
 ---?image=assets/control-panal.jpg
 <div style="background: rgba(0,0,0,.8); padding: 100px 20px;">
  <h3>Components</h3>
@@ -260,6 +270,9 @@ In programming a component is defined as an independent piece of software with a
 
 ![Image of a toggle component](assets/toggle-component.png)
 
+Notes: 
+
+- Show that we have variant state controlled through an interface
 ---
 
 ```jsx
@@ -276,10 +289,17 @@ In programming a component is defined as an independent piece of software with a
         onChange={ doSomthing }
     />
 ```
+Notes:
+
+- shows props interface for state
 ---
 
 Larger Components can be built out of smaller ones
 ![Complex component](assets/media-card.png)
+
+Notes:
+
+- Composible 
 
 ---
 
@@ -318,6 +338,11 @@ Accelerate Development
 
 User Experience Consistency
 
+Notes:
+
+- Design system
+- Every toggle looks and behaves the same way
+- We are already sold on components so let's get to the point of talking about why they are good
 ---
 
 ### Back to the CSS
@@ -359,11 +384,18 @@ A component in CSS is just a logical mapping of CSS selectors to an html structu
     </form>
 </div>
 ``` 
----
+___
+
 
 The structure is implied by the CSS
 
+Notes:
+- Not explicit we have to interpret the intent
+- We can break this structure without knowing it
+- Shifting context back and forth to understand the structure 
+
 ---
+
 A project that uses something like BEM, SUITCSS, ECSS etc. might look like this
 
 ```
@@ -382,6 +414,10 @@ css/
 - callouts-template.css
 - products-template.css
 ```
+Notes:
+
+- We are separating concerns as files but the rules are tightly coupled through discipline
+- If we break this expectation we break our app (possibly without knowing it)
 
 ---
 
@@ -403,12 +439,19 @@ products-template/
 - products.css
 
 ```
+Notes:
 
+- This makes deletion easier
 ---
 
 ### Implicit coupling
-This is a superficial relationship that requires parallel maintenance
-Scoping happens through naming conventions and discipline
+This is a superficial relationship that requires parallel maintenance.
+
+Scoping happens through naming conventions and discipline.
+
+---
+
+### Dealing with Variation
 
 ---
 
@@ -436,6 +479,10 @@ We could consider a context modifier
 .Sidebar .Widget { width: 100%; }
 .Footer .Widget { color: rgba(256,256,256,.8);} 
 ```
+
+Notes:
+
+- To keep easyish code deletion we want to keep this in the component CSS
 ---
 
 Or a variant modifier
@@ -481,6 +528,9 @@ These are decent solutions given the challenges
 
 But we can do better
 
+Notes:
+
+- Back to the rules we agreed upon earlier
 ---
 @ul
 - Use constraints over discipline
@@ -493,6 +543,9 @@ But we can do better
 - Test and catch errors
 @ulend
 
+Notes:
+
+- Like we have with React components
 ---
 
 @ul
@@ -500,13 +553,23 @@ But we can do better
 - Perform complex calculations and generate design systems
 @ulend
 
+Note:
+
+- Stack traces
 ---
 
 As a bonus...
 @ul
+- Ship self contained modules as packages
 - An easy solution to theming
 - Use fully featured programing language to manage it all
 @ulend
+
+Notes:
+
+- Let's stop saying separation of concerns
+- Let's do more than imply a relationship with a component
+- Let's put our CSS in our Components
 
 ---?image=assets/legos.jpg
 
@@ -538,6 +601,11 @@ ReactDOM.render(
     <div style={divStyle}>Hello World!</div>,
 mountNode);
 ```
+
+Notes:
+
+- Ask what is missing
+
 ---
 
 ### Prefixing
@@ -621,6 +689,10 @@ Button = Radium(Button);
 
 ### CSS in JS
 
+Notes:
+
+- Define a cascading style in our CSS
+- CSS modules
 ---
 
 ### Styled Components
@@ -650,7 +722,9 @@ const Text = styled.div`
 
 <p class="hash136s21">Hello CSS-in-JS</p>
 ```
+Notes:
 
+- uuid
 ---
 
 ### Performance
@@ -660,6 +734,10 @@ const Text = styled.div`
 <img src="assets/performance.png" width="500px"/>
 
 [The Performance of Styled React Components](https://blog.primehammer.com/the-performance-of-styled-react-components/)
+
+Notes:
+
+- With browsers improving support it will get better
 
 ---
 

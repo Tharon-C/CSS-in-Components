@@ -396,24 +396,24 @@ Note:
 A component in CSS is just a logical mapping of CSS selectors to an html structure
 ```html
 <style
-    .Toggle-wrapper: {
+    .Toggle-wrapper {
         ...
     }
-    .Toggle-switch: {
+    .Toggle-switch {
         ...   
     }
     .Toggle-switch--on {
         ...
     }
-    .Toggle-slide: {
+    .Toggle-slide {
         ...
     }
 
     /* For accessibility */
-    .Toggle-checkbox: {
+    .Toggle-checkbox {
         ...
     }
-    .Toggle-label: {
+    .Toggle-label {
         ...
     }
 </style>
@@ -488,13 +488,6 @@ Note:
 - This makes deletion easier
 ---
 
-### Implicit coupling
-This is a superficial relationship that requires parallel maintenance.
-
-Scoping happens through naming conventions and discipline.
-
----
-
 ### Dealing with Variation
 
 ---
@@ -548,6 +541,10 @@ Or a variant modifier
 .Widget.--fullWidth { width: 100%; }
 .Widget.--whiteText { color: rgba(256,256,256,.8);} 
 ```
+Note:
+
+- This is more reusable as the last won't scale well
+
 ---
 
 Or use utilities
@@ -563,6 +560,11 @@ Or use utilities
     }
 
 ```
+Note:
+
+- This is why I like SUITCSS way more reusable
+- Also see SMCSS and Tachyon
+- Scales because no matter how big just one deceleration is defined
 
 ---
 
@@ -580,6 +582,10 @@ Note:
 - Use constraints over discipline
 - Eliminate potential for side effects
 @ulend
+
+note:
+
+- Even with constraint or the best discipline we can have name collisions 
 ---
 
 @ul
@@ -590,6 +596,7 @@ Note:
 Note:
 
 - Like we have with React components
+
 ---
 
 @ul
@@ -746,7 +753,7 @@ Note:
 ```js
 import styled from 'styled-components';
 
-const Text = styled.div`
+const Text = styled.p`
   color: white,
   background: black
 `
@@ -769,6 +776,7 @@ const Text = styled.div`
 Note:
 
 - uuid
+- Good performance as one declaration for all instances
 ---
 
 ### Performance
@@ -782,6 +790,7 @@ Note:
 Note:
 
 - With browsers improving support it will get better
+- Server side render gives you CSS on initial load
 
 ---
 

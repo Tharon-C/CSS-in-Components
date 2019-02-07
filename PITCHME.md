@@ -18,7 +18,7 @@ Making a case for CSS in JS
 
 ---
 
-## Whats wrong with CSS?
+### Whats wrong with CSS?
 
 ---
 
@@ -77,9 +77,9 @@ Can we agree on three things?
 ---
 
 @ul
-1. He who writes a global variable shall be shot!
-2. Side effects suck!
-3. *Constraint* over *Discipline*
+- He who writes a global variable shall be shot!
+- Side effects suck!
+- *Constraint* over *Discipline*
 @ulend
 
 ---
@@ -89,9 +89,9 @@ Can we agree on three things?
 ---
 
 @ul
-1. Global variables are powerful 
-2. With one selector you can change the whole website
-3. CSS is forgiving
+- Global variables are powerful 
+- With one selector you can change the whole website
+- CSS is forgiving
 @ulend
 
 ---
@@ -140,11 +140,11 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 ---
 
 The following list of selector types increases by specificity:
-@ol
+@ul
 - Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
 - Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
 - ID selectors (e.g., #example).
-@olend
+@ulend
 
 ---
 

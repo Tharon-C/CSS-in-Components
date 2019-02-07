@@ -10,6 +10,9 @@ Removing side effects and taming the beast
 ### Why we are here
 Making a case for CSS in JS
 
+Note:
+
+- This is high level and meant to persuade 
 ---
 
 - What's wrong with CSS
@@ -215,7 +218,7 @@ BEM, SUITCSS, ECSS, SMCSS, ACSS
 
 http://getbem.com/
 
-Notes:
+Note:
 
 - Show that is a component
 
@@ -226,7 +229,7 @@ Notes:
 
 https://suitcss.github.io/
 
-Notes:
+Note:
 
 - Highlight component
 ---
@@ -246,7 +249,7 @@ As we saw with BEM and SUITCSS, there is the notion of a component
 </style>
 <div class="widgetScope"> ... </div>
 ```
-Notes:
+Note:
 
 - CSS is moving towards components
 ---?image=assets/control-panal.jpg
@@ -270,7 +273,7 @@ In programming a component is defined as an independent piece of software with a
 
 ![Image of a toggle component](assets/toggle-component.png)
 
-Notes: 
+Note: 
 
 - Show that we have variant state controlled through an interface
 ---
@@ -289,7 +292,7 @@ Notes:
         onChange={ doSomthing }
     />
 ```
-Notes:
+Note:
 
 - shows props interface for state
 ---
@@ -297,7 +300,7 @@ Notes:
 Larger Components can be built out of smaller ones
 ![Complex component](assets/media-card.png)
 
-Notes:
+Note:
 
 - Composible 
 
@@ -338,7 +341,7 @@ Accelerate Development
 
 User Experience Consistency
 
-Notes:
+Note:
 
 - Design system
 - Every toggle looks and behaves the same way
@@ -389,7 +392,7 @@ ___
 
 The structure is implied by the CSS
 
-Notes:
+Note:
 - Not explicit we have to interpret the intent
 - We can break this structure without knowing it
 - Shifting context back and forth to understand the structure 
@@ -414,7 +417,7 @@ css/
 - callouts-template.css
 - products-template.css
 ```
-Notes:
+Note:
 
 - We are separating concerns as files but the rules are tightly coupled through discipline
 - If we break this expectation we break our app (possibly without knowing it)
@@ -439,7 +442,7 @@ products-template/
 - products.css
 
 ```
-Notes:
+Note:
 
 - This makes deletion easier
 ---
@@ -480,7 +483,7 @@ We could consider a context modifier
 .Footer .Widget { color: rgba(256,256,256,.8);} 
 ```
 
-Notes:
+Note:
 
 - To keep easyish code deletion we want to keep this in the component CSS
 ---
@@ -528,7 +531,7 @@ These are decent solutions given the challenges
 
 But we can do better
 
-Notes:
+Note:
 
 - Back to the rules we agreed upon earlier
 ---
@@ -543,7 +546,7 @@ Notes:
 - Test and catch errors
 @ulend
 
-Notes:
+Note:
 
 - Like we have with React components
 ---
@@ -565,7 +568,7 @@ As a bonus...
 - Use fully featured programing language to manage it all
 @ulend
 
-Notes:
+Note:
 
 - Let's stop saying separation of concerns
 - Let's do more than imply a relationship with a component
@@ -602,7 +605,7 @@ ReactDOM.render(
 mountNode);
 ```
 
-Notes:
+Note:
 
 - Ask what is missing
 
@@ -689,7 +692,7 @@ Button = Radium(Button);
 
 ### CSS in JS
 
-Notes:
+Note:
 
 - Define a cascading style in our CSS
 - CSS modules
@@ -722,7 +725,7 @@ const Text = styled.div`
 
 <p class="hash136s21">Hello CSS-in-JS</p>
 ```
-Notes:
+Note:
 
 - uuid
 ---
@@ -735,7 +738,7 @@ Notes:
 
 [The Performance of Styled React Components](https://blog.primehammer.com/the-performance-of-styled-react-components/)
 
-Notes:
+Note:
 
 - With browsers improving support it will get better
 

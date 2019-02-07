@@ -23,6 +23,10 @@ Note:
 
 ### Whats wrong with CSS?
 
+Note:
+
+- Vent, we are in a safe space
+- Let's look at this symptomatically 
 ---
 
 This will just take a few minutes to fix
@@ -42,6 +46,10 @@ We know what is wrong and how to fix it, but...
 ---
 
 Refactoring unrelated code = Bad PRs
+
+Note:
+
+- PR has changes for every payer except the one we care about
 
 ---
 
@@ -85,6 +93,9 @@ Can we agree on three things?
 - *Constraint* over *Discipline*
 @olend
 
+Note:
+
+- I would have a bunch of angry people holding signs
 ---
 
 ### CSS disagrees
@@ -96,6 +107,10 @@ Can we agree on three things?
 - With one selector you can change the whole website
 - CSS is forgiving
 @olend
+
+Note:
+- CSS is designed to work this way for a reason
+- By understanding how CSS works we can work with it better
 
 ---
 
@@ -134,11 +149,18 @@ Everyone loses
 
 What is Specificity?
 
+Note:
+
+- is it a buzz word the office CSS wizard tells us for job security
+
 ---
 
 > Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. --MDN
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
+
+Note:
+- Browser Decides!? How?
 
 ---
 
@@ -149,6 +171,9 @@ The following list of selector types increases by specificity:
 - ID selectors (e.g., #example).
 @olend
 
+Note:
+
+- Confirm understanding
 ---
 
 ### So... who wins?
@@ -165,6 +190,9 @@ div.homepage .footer a.listitem:hover {
 
 Specificity Calculator: https://specificity.keegan.st/
 
+Note:
+- in this corner we have a mess and in this corner... Fight!
+
 --- 
 
 ### Side Effects
@@ -175,6 +203,10 @@ The only thing we have is self discipline
     display: none;
 }
 ```
+Note:
+
+- No way of stopping someone from doing this
+- This is easy to catch. It's the subtle ones that are nasty
 
 ---
 
@@ -195,9 +227,15 @@ The browser is too forgiving
 ```
 <code style="color: red; font-size: 32px; background: white; padding: 10px;">`Uncaught ReferenceError: widgiit is not defined`</code>
 
+Note:
+- or on the flip side lint that a selector isn't used
 ---
 
 But people make amazing applications CSS!
+
+Note:
+- People like Chris Coyier do really well in this world
+- People wear CSS skills and battle scares like a badge of honor
 
 ---?image=assets/methodology.jpg
 
@@ -295,6 +333,9 @@ Note:
 Note:
 
 - shows props interface for state
+- these values are defining how the component looks (style)
+- Say it here, the separation of concern is the component boundary
+
 ---
 
 Larger Components can be built out of smaller ones
@@ -343,7 +384,7 @@ User Experience Consistency
 
 Note:
 
-- Design system
+- Atomic design system
 - Every toggle looks and behaves the same way
 - We are already sold on components so let's get to the point of talking about why they are good
 ---
@@ -387,6 +428,7 @@ A component in CSS is just a logical mapping of CSS selectors to an html structu
     </form>
 </div>
 ``` 
+
 ___
 
 

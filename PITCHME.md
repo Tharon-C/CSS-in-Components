@@ -76,11 +76,11 @@ Can we agree on three things?
 
 ---
 
-@ul
+@ol
 - He who writes a global variable shall be shot!
 - Side effects suck!
 - *Constraint* over *Discipline*
-@ulend
+@olend
 
 ---
 
@@ -88,11 +88,11 @@ Can we agree on three things?
 
 ---
 
-@ul
+@ol
 - Global variables are powerful 
 - With one selector you can change the whole website
 - CSS is forgiving
-@ulend
+@olend
 
 ---
 
@@ -200,6 +200,7 @@ But people make amazing applications CSS!
 
 <div style="background: rgba(0,0,0,.8); padding: 20px;">
 <h3> Methodologies and Tools! </h3>
+<p>How we solve problems today</p>
 </div>
 
 ---
